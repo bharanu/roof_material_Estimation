@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roof Material Estimation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Roof Material Estimation</h1>
+        <form id="materialForm">
+            <div class="form-group">
+                <label for="channel">Channel in KG:</label>
+                <input type="number" id="channel" name="channel" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="angel">Angel in KG:</label>
+                <input type="number" id="angel" name="angel" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="flatPatti">Flat/Patti 40*5:</label>
+                <input type="number" id="flatPatti" name="flatPatti" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="flatBaar">Flat Baar 20*5:</label>
+                <input type="number" id="flatBaar" name="flatBaar" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="patra">PATRA/Chhalar:</label>
+                <input type="number" id="patra" name="patra" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="ceilingSheet">Ceiling Sheet Pcs:</label>
+                <input type="number" id="ceilingSheet" name="ceilingSheet" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="weldingRod">Welding Rod pkt:</label>
+                <input type="number" id="weldingRod" name="weldingRod" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="chopSawWheel">Chopsaw Wheel / Cutter wheel Pcs:</label>
+                <input type="number" id="chopSawWheel" name="chopSawWheel" min="0" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Calculate Total</button>
+            </div>
+        </form>
+        <div id="totalEstimate"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
